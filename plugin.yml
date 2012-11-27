@@ -1,0 +1,17 @@
+name: ChestCommands
+version: 1.0.0
+description: ChestCommands by MexMaster
+main: me.MexMaster.ChestCommands.ChestCommands
+commands:
+   chestcommandscreate:
+      description: ChestCommands create Command
+      usage:
+   chestcommandsremove:
+      description: ChestCommands remove Command
+      usage:
+   chestcommandsreload:
+      description: ChestCommands reload Command
+      usage:
+   chestcommands:
+      description: ChestCommands main Command
+      usage:

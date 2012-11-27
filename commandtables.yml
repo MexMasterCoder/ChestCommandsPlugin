@@ -1,0 +1,5 @@
+example:
+  playercommands:
+    - say Command by a Player!
+  consolecommands:
+    - say Command by Console!
