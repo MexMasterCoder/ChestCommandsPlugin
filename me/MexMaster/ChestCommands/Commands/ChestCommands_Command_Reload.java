@@ -13,7 +13,7 @@ public class ChestCommands_Command_Reload implements CommandExecutor {
 			if(args.length == 0){
 				me.MexMaster.ChestCommands.ChestCommands.loadYamls();
 				
-				sender.sendMessage(ChatColor.GOLD + "ChestCommands Reloaded!");
+				sender.sendMessage(ChatColor.GOLD + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.reloaded"));
 			}
 		}
 		return true;

@@ -27,7 +27,7 @@ public class ChestCommands_Listener_Interact implements Listener {
     @EventHandler
     public void Listener(PlayerInteractEvent e){
     	Player p = e.getPlayer();
-    	thechest = p.getTargetBlock(null, 200).getLocation();
+    	thechest = p.getTargetBlock(null, 5).getLocation();
     	thechestblock = thechest.getBlock();
     	if(thechestblock.getTypeId() == 54){
     		
@@ -50,12 +50,16 @@ public class ChestCommands_Listener_Interact implements Listener {
     			List<String> commandsplayer = me.MexMaster.ChestCommands.ChestCommands.commandtables.getStringList(commandtablestr + ".playercommands");
     			
     			for(String commandstr : commandsconsole) {
+    				
+    				commandstr = commandstr.replace("%player%" , p.getName());
 			        
     				plugin.getServer().dispatchCommand(plugin.getServer().getConsoleSender(), commandstr);
     				
     			}
     			
     			for(String commandstr : commandsplayer) {
+    				
+    				commandstr = commandstr.replace("%player%" , p.getName());
 			        
     				p.performCommand(commandstr);
     				

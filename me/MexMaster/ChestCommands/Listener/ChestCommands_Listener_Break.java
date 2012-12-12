@@ -41,7 +41,7 @@ public class ChestCommands_Listener_Break implements Listener {
     		
     		Player p = e.getPlayer();
     		
-    		p.sendMessage(ChatColor.RED + "Cancelled, because this is a command chest!");
+    		p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.cancelled"));
     		
     	}
     }

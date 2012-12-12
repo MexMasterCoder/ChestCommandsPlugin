@@ -39,22 +39,22 @@ public class ChestCommands_Command_Create implements CommandExecutor {
 							
 							me.MexMaster.ChestCommands.ChestCommands.saveYamls();
 							
-							sender.sendMessage(ChatColor.GOLD + "Command Chest successfully created!");
+							sender.sendMessage(ChatColor.GOLD + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.created"));
 							
 						}else{
-							p.sendMessage(ChatColor.RED + "This Chest is already set");
+							p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.chest_already_set"));
 						}
 					}else{
-						p.sendMessage(ChatColor.RED + "No Chest");
+						p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.no_chest"));
 					}
 				}else{
-					p.sendMessage(ChatColor.RED + "You don't have Permission!");
+					p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.permission_deny"));
 				}
 			}else{
-				sender.sendMessage(ChatColor.RED + "Wrong arguments");
+				sender.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.wrong_arguments"));
 			}
 		}else{
-			sender.sendMessage("This Command can only be executed by a player");
+			sender.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.only_player_command"));
 		}
 		return true;
 	}

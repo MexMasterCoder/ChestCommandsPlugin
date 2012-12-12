@@ -36,21 +36,21 @@ public class ChestCommands_Command_Remove implements CommandExecutor {
 							
 							me.MexMaster.ChestCommands.ChestCommands.saveYamls();
 							
-							p.sendMessage(ChatColor.GOLD + "Chest successfully removed from list");
+							p.sendMessage(ChatColor.GOLD + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.removed"));
 						}else{
-							p.sendMessage(ChatColor.RED + "This Chest is not set");
+							p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.chest_not_set"));
 						}
 					}else{
-						p.sendMessage(ChatColor.RED + "No Chest");
+						p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.no_chest"));
 					}
 				}else{
-					p.sendMessage(ChatColor.RED + "You don't have permission");
+					p.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.permission_deny"));
 				}
 			}else{
-				sender.sendMessage(ChatColor.RED + "Wrong arguments");
+				sender.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.wrong_arguments"));
 			}
 		}else{
-			sender.sendMessage("This command can only be executed by a player");
+			sender.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.only_player_command"));
 		}
 		
 		return true;

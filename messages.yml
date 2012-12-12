@@ -1,0 +1,13 @@
+messages:
+  created: Command Chest successfully created!
+  removed: Command Chest successfully removed!
+  reloaded: ChestCommands reloaded!
+  
+  chest_already_set: This Chest is already a Command Chest!
+  no_chest: There is no Chest!
+  permission_deny: You don't have Permission!
+  wrong_arguments: Wrong arguments!
+  only_player_command: This Command can only be executed by a player!
+  chest_not_set: This Chest is not known by ChestCommands
+  cancelled: Cancelled, because this is a Command Chest!
+  

@@ -12,11 +12,11 @@ public class ChestCommands_Command_Main implements CommandExecutor {
 			if(args.length == 0){
 				sender.sendMessage(ChatColor.GOLD + "--ChestCommands--");
 				sender.sendMessage(ChatColor.GRAY + "Commands:");
-				sender.sendMessage(ChatColor.GOLD + "-/chestcommandscreate | To create a command chest at where you look");
+				sender.sendMessage(ChatColor.GOLD + "-/chestcommandscreate <commandtable> | To create a command chest at where you look");
 				sender.sendMessage(ChatColor.GOLD + "-/chestcommandsremove | To remove a command chest at where you look");
 				sender.sendMessage(ChatColor.GOLD + "-/chestcommandsreload | To reload the commandtables.yml, chests.yml and the messages.yml");
 			}else{
-				sender.sendMessage("Wrong arguments");
+				sender.sendMessage(ChatColor.RED + me.MexMaster.ChestCommands.ChestCommands.messages.getString("messages.wrong_arguments"));
 			}
 		return true;
 	}

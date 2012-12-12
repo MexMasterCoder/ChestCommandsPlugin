@@ -34,7 +34,7 @@ public class ChestCommands extends JavaPlugin{
         
 		saveYamls();
         
-		System.out.println(" ChestCommands disabled!");
+		System.out.println(" ChestCommands deaktiviert!");
 		System.out.println("--------------------------------------");
     }
 
@@ -68,8 +68,9 @@ public class ChestCommands extends JavaPlugin{
         loadYamls();
 		
 		System.out.println(" Version: 1.0");
-		System.out.println(" ChestCommands enabled!");
+		System.out.println(" ChestCommands aktiviert!");
 		System.out.println(" Author: MexMaster");
+		System.out.println(" Idea: InflamedSebi");
 		System.out.println("--------------------------------------");	
     }
     
@@ -110,6 +111,7 @@ public class ChestCommands extends JavaPlugin{
         try {
         	chests.load(chestFile);
         	commandtables.load(commandtableFile);
+        	messages.load(messagesFile);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -119,6 +121,7 @@ public class ChestCommands extends JavaPlugin{
         try {
         	chests.save(chestFile);
         	commandtables.save(commandtableFile);
+        	messages.save(messagesFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
